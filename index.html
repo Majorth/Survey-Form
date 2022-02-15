@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bag Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Shopping Bag Survey Form</h1>
+    <p id="description">Do you use disposable or reusable shopping bags? </p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Enter your First and Last Name:<input type=text name="name" id="name" required type="text"  placeholder="Enter your first and last name."></label>
+            <label id="email-label" for="email">Enter your Email:<input type="email" name="email" id="email"required type="email"placeholder="Enter your email like this: jane@aol.com"></label>
+            <label id="number-label" for="number">Enter your Age:<input type="number" name="age" id="number" required type="number" min="18" max="100" placeholder=" Enter your age like this: 35"></label>
+        </fieldset><!--Adding the id with for in Label then adding id to input was new. it affected CSS. corrected by using input's id.-->
+        <fieldset>
+            <label>Do you complete the shopping for your home?</label>
+            <label><input class="inline" type="radio"name="questions" value="1">All of the time</label>
+            <label><input class="inline" type="radio"name="questions" value="2">Most of the time</label>
+            <label><input class="inline" type="radio"name="questions" value="3">Some of the time</label>
+            <label><input class="inline" type="radio"name="questions" value="4">Occasionally</label>
+            <label><input class="inline" type="radio"name="questions" value="5">Never</label>
+        </fieldset>
+        <fieldset>    
+            <label>Do you use reusable bags?</label>
+            <label><input class="inline" type="radio"name="questions" value="1">All of the time</label>
+            <label><input class="inline" type="radio"name="questions" value="2">Most of the time</label>
+            <label><input class="inline" type="radio"name="questions" value="3">Some of the time</label>
+            <label><input class="inline" type="radio"name="questions" value="4">Occasionally</label>
+            <label><input class="inline" type="radio"name="questions" value="5">Never</label>
+        </fieldset>
+        <fieldset>
+            <label>Check the types of bags you utilize:</label>
+            <label><input class="inline" name="bags" type="checkbox" value="1">Disposable Plastic</label>
+            <label><input class="inline" name="bags" type="checkbox"value="2">Paper</label>
+            <label><input class="inline" name="bags" type="checkbox" value="3">Synthetic fiber</label>
+            <label><input class="inline" name="bags" type="checkbox"value="4">Natural fiber</label>
+        </fieldset>
+        <fieldset>
+            <label >Store you most often shop?
+            <select id="dropdown">
+               <option value=""></option>
+               <option value="1">Martins</option>
+               <option value="2">Walmart or other box Store</option>
+               <option value="3">Aldi</option>
+               <option value="4">Whole Foods</option>
+               <option value="5">Other</option>
+            </select>
+           </label>     
+        </fieldset>
+        <fieldset>
+            <label id="textarea">Provide additional comments:<textarea name="textarea" rows 5 cols 30 placeholder="Saving the planet one bag at a time..."></textarea></label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit">
+
+       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
